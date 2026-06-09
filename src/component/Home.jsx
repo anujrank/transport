@@ -15,7 +15,7 @@ function Home() {
                     className="absolute inset-0 bg-[url('/hero-img.png')] bg-cover bg-center mix-blend-overlay opacity-40"
                     aria-hidden="true"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/10 via-slate-900/10 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-r from-slate-950/10 via-slate-900/10 to-transparent" />
 
                 {/* Content */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-32">
@@ -27,7 +27,7 @@ function Home() {
                         
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                             Smart Storage & <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500">
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-400 to-amber-500">
                                 Transport Enterprise
                             </span>
                         </h1>
@@ -107,7 +107,7 @@ function Home() {
                                     <h3 className="text-xl font-bold text-slate-900">{item.highlight}</h3>
                                     <p className="text-slate-500 leading-relaxed">{item.desc}</p>
                                 </div>
-                                <button className="mt-6 text-sm font-bold text-slate-900 hover:text-amber-600 inline-flex items-center gap-2 group cursor-pointer w-fit" onClick={() => navigate('/servicef')}>
+                                <button className="mt-6 text-sm font-bold text-slate-900 hover:text-amber-600 inline-flex items-center gap-2 group cursor-pointer w-fit" onClick={() => navigate('/service')}>
                                     Read details 
                                     <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                                 </button>

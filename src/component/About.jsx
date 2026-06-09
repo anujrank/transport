@@ -8,7 +8,7 @@ function About() {
         <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
             
             {/* abouthero section */}
-            <div className="relative h-[400px] md:h-[500px] bg-slate-950 flex items-center justify-center overflow-hidden">
+            <div className="relative h-100 md:h-125 bg-slate-950 flex items-center justify-center overflow-hidden">
                 {/* Overlay with subtle image backdrop */}
                 <div className="absolute inset-0 bg-[url('/about-img.png')] bg-cover bg-center  mix-blend-overlay"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-950/10 via-slate-900/10 to-transparent"></div>
@@ -42,7 +42,7 @@ function About() {
                     </div> */}
                 </div>
                 <div className="lg:w-1/2 w-full">
-                    <img src="/aboutus.png" alt="about us" className="w-full h-[400px] lg:h-[450px] object-cover rounded-2xl shadow-xl border border-slate-200/60" />
+                    <img src="/aboutus.png" alt="about us" className="w-full h-100 lg:h-112 object-cover rounded-2xl shadow-xl border border-slate-200/60" />
                 </div>
             </div>
 
