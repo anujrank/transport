@@ -72,7 +72,7 @@ function Header() {
             menuOpen ? "max-h-64 pb-6" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col gap-4 border-t border-slate-100 pt-4 font-semibold text-slate-600 text-sm tracking-wide uppercase">
+          <ul className="flex flex-col gap-4 border-t border-slate-100 pt-4 pl-7 font-semibold text-slate-600 text-sm tracking-wide uppercase">
             <li
               className="cursor-pointer hover:text-blue-600 py-1 transition-colors"
               onClick={() => handleNavigation("/")}

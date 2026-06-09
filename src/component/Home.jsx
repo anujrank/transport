@@ -2,7 +2,9 @@ import React from 'react';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 function Home() {
+    const navigate = useNavigate();
     return (
         <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
             
@@ -35,10 +37,10 @@ function Home() {
                         </p>
 
                         <div className="pt-4 flex flex-wrap gap-4">
-                            <button className="bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-slate-950 font-bold py-4 px-8 rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer flex items-center gap-2">
+                            <button className="bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-slate-950 font-bold py-4 px-8 rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer flex items-center gap-2" onClick={() => navigate('/contact')}>
                                 Get Started Today<FaRegArrowAltCircleRight className='text-2xl'/>
                             </button>
-                            <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-xl border border-white/10 backdrop-blur-sm transition-all duration-200 cursor-pointer flex items-center gap-2">
+                            <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-xl border border-white/10 backdrop-blur-sm transition-all duration-200 cursor-pointer flex items-center gap-2" onClick={() => navigate('/contact')}>
                                 Contact Sales<MdPermPhoneMsg className='text-2xl'/>
                             </button>
                         </div>
@@ -63,7 +65,7 @@ function Home() {
                             Our experienced team, modern fleet, and secure storage facilities enable us to deliver seamless logistics solutions that you can trust. Whether you need short-term storage or long-distance transportation, we are dedicated to providing timely, secure, and cost-effective services every step of the way.
                         </p>
                         <div className="pt-2">
-                            <button className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-200 cursor-pointer shadow-md flex items-center gap-2">
+                            <button className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-200 cursor-pointer shadow-md flex items-center gap-2" onClick={() => navigate('/about')}>
                                 Know More About Us <FaAngleDoubleRight className='text-xl'/>
                             </button>
                         </div>
@@ -105,7 +107,7 @@ function Home() {
                                     <h3 className="text-xl font-bold text-slate-900">{item.highlight}</h3>
                                     <p className="text-slate-500 leading-relaxed">{item.desc}</p>
                                 </div>
-                                <button className="mt-6 text-sm font-bold text-slate-900 hover:text-amber-600 inline-flex items-center gap-2 group cursor-pointer w-fit">
+                                <button className="mt-6 text-sm font-bold text-slate-900 hover:text-amber-600 inline-flex items-center gap-2 group cursor-pointer w-fit" onClick={() => navigate('/servicef')}>
                                     Read details 
                                     <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                                 </button>
@@ -153,7 +155,7 @@ function Home() {
                 </div>
 
                 <div className="text-center mt-12">
-                    <span className="inline-flex items-center gap-1 font-bold text-amber-600 hover:text-amber-700 cursor-pointer transition-colors px-4 py-2 hover:bg-amber-50 rounded-lg">
+                    <span className="inline-flex items-center gap-1 font-bold text-amber-600 hover:text-amber-700 cursor-pointer transition-colors px-4 py-2 hover:bg-amber-50 rounded-lg" onClick={() => navigate('/service')}>
                         View All Operational Services Coverages <span>→</span>
                     </span>
                 </div>

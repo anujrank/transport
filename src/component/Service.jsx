@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 function Service() {
+    const navigate = useNavigate();
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
         {/* hero section */}
@@ -102,7 +103,7 @@ function Service() {
             <h3 className='text-slate-300 text-base sm:text-lg font-medium max-w-xl mx-auto'>Contact us anytime for reliable support and assistance.</h3>
             <h4 className='text-slate-400 text-sm max-w-md mx-auto'>Available 24/7 to support your transportation needs.</h4>
             <div className="pt-4">
-                <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-blue-500/10 transition-all duration-200 cursor-pointer">
+                <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-blue-500/10 transition-all duration-200 cursor-pointer" onClick={() => navigate('/contact')}>
                     Contact Us Now
                 </button>
             </div>
