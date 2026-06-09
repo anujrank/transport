@@ -12,46 +12,46 @@ function Header() {
   };
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-5">
-        <div className="flex items-center justify-between h-20 lg:fixed overflow-hidden top-0 left-0 right-0 z-50 bg-white lg:px-40">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+      <div className="max-w-7xl mx-auto sm:px-12 md:px-5 ">
+        <div className="flex items-center justify-between h-20">
           
           {/* Logo */}
-          <div>
-            <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
-              Transport
+          <div className="flex items-center">
+            <h1 className="cursor-pointer" onClick={() => navigate("/")}>
+              <img src="/logo.png" alt="Logo" className="h-48 w-auto object-contain" />
             </h1>
           </div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:block">
-            <ul className="flex items-center gap-8 font-medium">
+            <ul className="flex items-center gap-8 font-semibold text-slate-600 text-sm tracking-wide uppercase">
               <li
-                className="cursor-pointer hover:text-blue-600 transition duration-300"
+                className="cursor-pointer transition-colors duration-200 hover:text-amber-500 hover:underline underline-offset-4"
                 onClick={() => navigate("/")}
               >
-                <span className="cursor-pointer">Home</span>
+                <span>Home</span>
               </li>
 
               <li
-                className="cursor-pointer hover:text-blue-600 transition duration-300"
+                className="cursor-pointer transition-colors duration-200 hover:text-amber-500 hover:underline underline-offset-4"
                 onClick={() => navigate("/about")}
               >
-                <span className="cursor-pointer">About</span>
+                <span>About</span>
               </li>
 
               <li
-                className="cursor-pointer hover:text-blue-600 transition duration-300"
-                onClick={() => navigate("/services")}
+                className="cursor-pointer transition-colors duration-200 hover:text-amber-500 hover:underline underline-offset-4"
+                onClick={() => navigate("/service")}
               >
-                <span className="cursor-pointer">Services</span>
+                <span>Services</span>
               </li>
 
               <li
-                className="cursor-pointer hover:text-blue-600 transition duration-300"
+                className="cursor-pointer transition-colors duration-200 hover:text-amber-500 hover:underline underline-offset-4"
                 onClick={() => navigate("/contact")}
               >
-                <span className="cursor-pointer">Contact</span>
+                <span>Contact</span>
               </li>
             </ul>
           </nav>
@@ -59,7 +59,8 @@ function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-3xl cursor-pointer"
+            className="md:hidden text-3xl text-slate-700 cursor-pointer p-1 hover:bg-slate-50 rounded-lg transition-colors"
+            aria-label="Toggle Menu"
           >
             {menuOpen ? <IoCloseSharp /> : <IoMenuOutline />}
           </button>
@@ -67,34 +68,34 @@ function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
-            menuOpen ? "max-h-60 pb-4" : "max-h-0"
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            menuOpen ? "max-h-64 pb-6" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col gap-4 border-t pt-4 font-medium">
+          <ul className="flex flex-col gap-4 border-t border-slate-100 pt-4 font-semibold text-slate-600 text-sm tracking-wide uppercase">
             <li
-              className="cursor-pointer hover:text-blue-600"
+              className="cursor-pointer hover:text-blue-600 py-1 transition-colors"
               onClick={() => handleNavigation("/")}
             >
               Home
             </li>
 
             <li
-              className="cursor-pointer hover:text-blue-600"
+              className="cursor-pointer hover:text-blue-600 py-1 transition-colors"
               onClick={() => handleNavigation("/about")}
             >
               About
             </li>
 
             <li
-              className="cursor-pointer hover:text-blue-600"
-              onClick={() => handleNavigation("/services")}
+              className="cursor-pointer hover:text-blue-600 py-1 transition-colors"
+              onClick={() => handleNavigation("/service")}
             >
               Services
             </li>
 
             <li
-              className="cursor-pointer hover:text-blue-600"
+              className="cursor-pointer hover:text-blue-600 py-1 transition-colors"
               onClick={() => handleNavigation("/contact")}
             >
               Contact
