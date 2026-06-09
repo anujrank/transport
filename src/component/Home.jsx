@@ -128,9 +128,9 @@ function Home() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {[
-                        { img: "/service1.png", label: "Short Trucks" },
-                        { img: "/service2.png", label: "Global Transport" },
-                        { img: "/service3.png", label: "Smart Warehouse" }
+                        { img: "/service1.png", label: "Short Trucks", desc: "Reliable short-distance transportation solutions." },
+                        { img: "/service2.png", label: "Global Transport", desc: "Seamless international logistics and shipping." },
+                        { img: "/service3.png", label: "Smart Warehouse", desc: "Advanced storage and inventory management." }
                     ].map((service, idx) => (
                         <div key={idx} className="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg aspect-[4/5]">
                             <img
@@ -147,7 +147,7 @@ function Home() {
                                     {service.label}
                                 </h3>
                                 <p className="text-slate-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
-                                    Optimized, fully monitored operational routing tailored for enterprise workflows.
+                                    {service.desc}
                                 </p>
                             </div>
                         </div>
