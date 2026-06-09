@@ -9,7 +9,7 @@ function Service() {
 
                 {/* Blue Tint Overlay over the Background Image */}
                 <div className="absolute inset-0 bg-[url('/service-img.png')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/10 via-slate-900/10 to-transparent"></div>
 
                 {/* Content */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center space-y-4">

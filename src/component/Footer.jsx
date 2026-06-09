@@ -28,10 +28,10 @@ function Footer() {
                 <div>
                     <ul className='space-y-4'>
                         <h1 className='text-lg font-bold text-white'>Our Services</h1>
-                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base">Warehousing</li>
-                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base">Short Trucks</li>
-                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base">Transportation</li>
-                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base">Supply Chain Management</li>
+                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base" onClick={() => navigate('/service')}>Storage</li>
+                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base" onClick={() => navigate('/service')}>Logistic</li>
+                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base" onClick={() => navigate('/service')}>Transportation</li>
+                        <li className="text-slate-400 hover:text-amber-500 transition-colors duration-200 cursor-pointer text-sm sm:text-base" onClick={() => navigate('/service')}>Tow Service</li>
                     </ul>
                 </div>
                 <div>

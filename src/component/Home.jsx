@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { MdPermPhoneMsg } from "react-icons/md";
+import { FaAngleDoubleRight } from "react-icons/fa";
 function Home() {
     return (
         <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
@@ -11,7 +13,7 @@ function Home() {
                     className="absolute inset-0 bg-[url('/hero-img.png')] bg-cover bg-center mix-blend-overlay opacity-40"
                     aria-hidden="true"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/10 via-slate-900/10 to-transparent" />
 
                 {/* Content */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-32">
@@ -33,11 +35,11 @@ function Home() {
                         </p>
 
                         <div className="pt-4 flex flex-wrap gap-4">
-                            <button className="bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-slate-950 font-bold py-4 px-8 rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer">
-                                Get Started Today
+                            <button className="bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-slate-950 font-bold py-4 px-8 rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer flex items-center gap-2">
+                                Get Started Today<FaRegArrowAltCircleRight className='text-2xl'/>
                             </button>
-                            <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-xl border border-white/10 backdrop-blur-sm transition-all duration-200 cursor-pointer">
-                                Contact Sales
+                            <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-xl border border-white/10 backdrop-blur-sm transition-all duration-200 cursor-pointer flex items-center gap-2">
+                                Contact Sales<MdPermPhoneMsg className='text-2xl'/>
                             </button>
                         </div>
                     </div>
@@ -61,8 +63,8 @@ function Home() {
                             Our experienced team, modern fleet, and secure storage facilities enable us to deliver seamless logistics solutions that you can trust. Whether you need short-term storage or long-distance transportation, we are dedicated to providing timely, secure, and cost-effective services every step of the way.
                         </p>
                         <div className="pt-2">
-                            <button className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-200 cursor-pointer shadow-md">
-                                Know More About Us
+                            <button className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-200 cursor-pointer shadow-md flex items-center gap-2">
+                                Know More About Us <FaAngleDoubleRight className='text-xl'/>
                             </button>
                         </div>
                     </div>

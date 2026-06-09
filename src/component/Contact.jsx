@@ -10,7 +10,7 @@ function Contact() {
             <div className="relative h-[350px] md:h-[450px] lg:h-[500px] w-full bg-blue-950 flex items-center justify-center overflow-hidden rounded-3xl max-w-7xl mx-auto shadow-xl">
                 {/* Blue Tint Overlay over the Background Image */}
                 <div className="absolute inset-0 bg-[url('/contact.png')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 via-blue-950/80 to-blue-950"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-blue-900/5 via-blue-950/5 to-blue-950"></div>
                 
                 {/* Hero Inner Content */}
                 <div className="relative z-10 text-center space-y-3 px-4">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaCheckSquare } from "react-icons/fa";
-
+import { BsRocketTakeoffFill } from "react-icons/bs";
+import { TbBulbFilled } from "react-icons/tb";
+import { BiSupport } from "react-icons/bi";
 function About() {
     return (
         <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
@@ -9,7 +11,7 @@ function About() {
             <div className="relative h-[400px] md:h-[500px] bg-slate-950 flex items-center justify-center overflow-hidden">
                 {/* Overlay with subtle image backdrop */}
                 <div className="absolute inset-0 bg-[url('/about-img.png')] bg-cover bg-center  mix-blend-overlay"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/10 via-slate-900/10 to-transparent"></div>
 
                 {/* Content */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center space-y-4">
@@ -33,11 +35,11 @@ function About() {
                         Owner : Kevin M Simpson
                     </h1>
                     
-                    <div>
+                    {/* <div>
                         <button className="bg-slate-900 hover:bg-slate-800 cursor-pointer text-white font-bold py-3.5 px-8 rounded-xl shadow-md transition-all duration-200">
                             Know More
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="lg:w-1/2 w-full">
                     <img src="/aboutus.png" alt="about us" className="w-full h-[400px] lg:h-[450px] object-cover rounded-2xl shadow-xl border border-slate-200/60" />
@@ -50,8 +52,8 @@ function About() {
 
                     {/* Mission */}
                     <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-4">
-                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-                            Our Mission
+                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                           <BsRocketTakeoffFill className="text-2xl" /> Our Mission
                         </h2>
                         <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                             Our mission is to provide safe, reliable, and efficient storage and
@@ -65,8 +67,8 @@ function About() {
 
                     {/* Vision */}
                     <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-4">
-                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-                            Our Vision
+                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                            <TbBulbFilled className="text-2xl" /> Our Vision
                         </h2>
                         <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                             Our vision is to be the most trusted and preferred storage and
@@ -83,8 +85,8 @@ function About() {
                             <h3 className="text-xs tracking-widest text-amber-400 font-bold uppercase">
                                 Professional Services
                             </h3>
-                            <h2 className="text-2xl font-bold tracking-tight mt-1">
-                                24 Hours Support
+                            <h2 className="text-2xl font-bold tracking-tight mt-1 flex items-center gap-2">
+                                <BiSupport className="text-2xl"/>24 Hours Support
                             </h2>
                         </div>
 
