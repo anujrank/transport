@@ -3,6 +3,7 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import Faq from './Faq';
 function Home() {
     const navigate = useNavigate();
     return (
@@ -207,7 +208,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-
+            <Faq/>
         </div>
     );
 }

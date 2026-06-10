@@ -20,6 +20,8 @@ function Contact() {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">
                         Contact Us
                     </h1>
+                    <h2 className="text-white text-xl font-semibold">We're Ready to Help</h2>
+                    <p className="text-white text-lg">Whether you need transportation, storage, or support, our team is just a call or message away.</p>
                 </div>
             </div>
 

@@ -6,7 +6,7 @@ import { BiSupport } from "react-icons/bi";
 function About() {
     return (
         <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
-            
+
             {/* abouthero section */}
             <div className="relative h-100 md:h-125 bg-slate-950 flex items-center justify-center overflow-hidden">
                 {/* Overlay with subtle image backdrop */}
@@ -21,6 +21,8 @@ function About() {
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white tracking-tight">
                         About Us
                     </h1>
+                    <h2 className='text-white text-xl font-semibold'>Driven by reliability, powered by experience.</h2>
+                    <p className='text-white text-lg'>We provide safe storage and transportation services designed to keep your goods moving smoothly and efficiently.</p>
                 </div>
             </div>
 
@@ -30,11 +32,11 @@ function About() {
                     <h2 className='text-sm font-bold text-amber-600 tracking-widest uppercase'>ABOUT US</h2>
                     <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Your Trusted Partner in Storage & Transportation Solutions</h3>
                     <p className="text-slate-600 leading-relaxed">At our company, we specialize in providing reliable storage and transportation services tailored to meet the needs of businesses and individuals. With a commitment to safety, efficiency, and customer satisfaction, we ensure that your goods are handled with the utmost care from pickup to delivery. Our experienced team, modern fleet, and secure storage facilities enable us to deliver seamless logistics solutions that you can trust. Whether you need short-term storage or long-distance transportation, we are dedicated to providing timely, secure, and cost-effective services every step of the way.</p>
-                    
+
                     <h1 className="text-lg font-bold text-amber-700 bg-amber-50 border border-amber-200/60 rounded-xl px-4 py-3 w-fit">
                         Owner : Kevin M Simpson
                     </h1>
-                    
+
                     {/* <div>
                         <button className="bg-slate-900 hover:bg-slate-800 cursor-pointer text-white font-bold py-3.5 px-8 rounded-xl shadow-md transition-all duration-200">
                             Know More
@@ -51,11 +53,11 @@ function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     {/* Mission */}
-                    <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-4">
-                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                           <BsRocketTakeoffFill className="text-2xl" /> Our Mission
+                    <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-4 group hover:bg-slate-950 hover:shadow-lg hover:shadow-slate-900 hover:-translate-y-3 transition-all duration-500">
+                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2 group-hover:text-white transition-all duration-500">
+                            <BsRocketTakeoffFill className="text-2xl"/> Our Mission
                         </h2>
-                        <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        <p className="text-slate-600 leading-relaxed text-sm sm:text-base group-hover:text-white transition-all duration-500">
                             Our mission is to provide safe, reliable, and efficient storage and
                             transportation solutions that help businesses and individuals move
                             their goods with confidence. We are committed to delivering exceptional
@@ -66,11 +68,11 @@ function About() {
                     </div>
 
                     {/* Vision */}
-                    <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-4">
-                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                    <div className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-4 group hover:bg-slate-950 hover:shadow-lg hover:shadow-slate-900 hover:-translate-y-3 transition-all duration-500">
+                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2 group-hover:text-white transition-all duration-500">
                             <TbBulbFilled className="text-2xl" /> Our Vision
                         </h2>
-                        <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        <p className="text-slate-600 leading-relaxed text-sm sm:text-base group-hover:text-white transition-all duration-500">
                             Our vision is to be the most trusted and preferred storage and
                             transportation company, recognized for excellence, innovation, and
                             reliability. We strive to create a future where businesses and
@@ -80,25 +82,47 @@ function About() {
                     </div>
 
                     {/* Services */}
-                    <div className="bg-slate-900 text-white p-8 rounded-2xl border border-slate-800 shadow-xl space-y-4 md:col-span-2 lg:col-span-1">
-                        <div>
-                            <h3 className="text-xs tracking-widest text-amber-400 font-bold uppercase">
-                                Professional Services
-                            </h3>
-                            <h2 className="text-2xl font-bold tracking-tight mt-1 flex items-center gap-2">
-                                <BiSupport className="text-2xl"/>24 Hours Support
-                            </h2>
+                    <div className="relative bg-[url('/Support.png')] bg-cover bg-center w-fit text-white p-8 rounded-2xl border border-slate-800 shadow-xl overflow-hidden md:col-span-2 lg:col-span-1 hover:shadow-lg hover:shadow-slate-900 hover:-translate-y-3 transition-all duration-500">
+
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-black/80"></div>
+
+                        {/* Content */}
+                        <div className="relative z-10 space-y-4">
+                            <div>
+                                <h3 className="text-xs tracking-widest text-amber-400 font-bold uppercase">
+                                    Professional Services
+                                </h3>
+                                <h2 className="text-2xl font-bold tracking-tight mt-1 flex items-center gap-2">
+                                    <BiSupport className="text-2xl" />
+                                    24 Hours Support
+                                </h2>
+                            </div>
+
+                            <ul className="space-y-3 text-white text-sm sm:text-base">
+                                <li className="flex items-center gap-3">
+                                    <FaCheckSquare className="text-amber-400 shrink-0 text-base" />
+                                    Professional & Experienced Team
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaCheckSquare className="text-amber-400 shrink-0 text-base" />
+                                    24/7 Customer Support
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaCheckSquare className="text-amber-400 shrink-0 text-base" />
+                                    Safe & Secure Operations
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaCheckSquare className="text-amber-400 shrink-0 text-base" />
+                                    Fast & Efficient Service
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaCheckSquare className="text-amber-400 shrink-0 text-base" />
+                                    Customer-Focused Approach
+                                </li>
+                            </ul>
                         </div>
-
-                        <ul className="space-y-3 text-slate-300 text-sm sm:text-base">
-                            <li className='flex items-center gap-3'><FaCheckSquare className='text-amber-400 shrink-0 text-base' /> Professional & Experienced Team</li>
-                            <li className='flex items-center gap-3'><FaCheckSquare className='text-amber-400 shrink-0 text-base' /> 24/7 Customer Support</li>
-                            <li className='flex items-center gap-3'><FaCheckSquare className='text-amber-400 shrink-0 text-base' /> Safe & Secure Operations</li>
-                            <li className='flex items-center gap-3'><FaCheckSquare className='text-amber-400 shrink-0 text-base' /> Fast & Efficient Service</li>
-                            <li className='flex items-center gap-3'><FaCheckSquare className='text-amber-400 shrink-0 text-base' /> Customer-Focused Approach</li>
-                        </ul>
                     </div>
-
                 </div>
             </div>
 
@@ -107,10 +131,10 @@ function About() {
                 <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-slate-900 tracking-tight mb-16">
                     What We Provide Our Customers
                 </h1>
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    
-                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4 hover:shadow-md transition-shadow duration-200 flex flex-col items-center">
+
+                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4  flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         <div className="w-20 h-20 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-4">
                             <img src="/Reliable-Transportation.png" alt="transportation" className="w-full h-full object-contain" />
                         </div>
@@ -120,7 +144,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4 hover:shadow-md transition-shadow duration-200 flex flex-col items-center">
+                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4  flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         <div className="w-20 h-20 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-4">
                             <img src="/Secure-Storage.png" alt="storage" className="w-full h-full object-contain" />
                         </div>
@@ -130,7 +154,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4 hover:shadow-md transition-shadow duration-200 flex flex-col items-center">
+                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4  flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         <div className="w-20 h-20 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-4">
                             <img src="/Efficient-Logistics.png" alt="logistics" className="w-full h-full object-contain" />
                         </div>
@@ -140,7 +164,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4 hover:shadow-md transition-shadow duration-200 flex flex-col items-center">
+                    <div className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm text-center space-y-4  flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         <div className="w-20 h-20 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center p-4">
                             <img src="/Cost-Effective-Solutions.png" alt="cost-effective" className="w-full h-full object-contain" />
                         </div>
@@ -152,7 +176,7 @@ function About() {
 
                 </div>
             </div>
-            
+
         </div>
     );
 }

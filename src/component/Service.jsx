@@ -20,6 +20,8 @@ function Service() {
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white tracking-tight">
                         Our Services
                     </h1>
+                    <h2 className="text-white text-xl font-semibold">Efficient, Safe, and Dependable Services</h2>
+                    <p className="text-white text-lg">We offer customized logistics, transport, and storage solutions to ensure seamless operations and peace of mind.</p>
                 </div>
 
             </div>
@@ -97,7 +99,7 @@ function Service() {
         </div>
 
         {/* contact section */}
-        <div className='bg-blue-950 text-white text-center space-y-4 py-20 px-6 sm:px-8 border-t border-blue-900'>
+        <div className='bg-black text-white text-center space-y-4 py-20 px-6 sm:px-8 border-t border-blue-900'>
             <span className="text-xs font-bold text-blue-400 tracking-widest uppercase block">Get In Touch</span>
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight max-w-2xl mx-auto">Feel free to contact us anytime you need</h1>
             <h3 className='text-slate-300 text-base sm:text-lg font-medium max-w-xl mx-auto'>Contact us anytime for reliable support and assistance.</h3>
