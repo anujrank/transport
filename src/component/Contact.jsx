@@ -98,7 +98,7 @@ function Contact() {
 
                             <div className="space-y-6">
                                 <div className="border-b border-slate-100 pb-4">
-                                    <h4 className="text-lg uppercase tracking-wider font-bold text-blue-600 flex items-center gap-2">
+                                    <h4 className="text-lg uppercase tracking-wider font-bold text-amber-500 flex items-center gap-2">
                                         <FaPhoneAlt />
                                         Phone
                                     </h4>
@@ -108,7 +108,7 @@ function Contact() {
                                 </div>
 
                                 <div className="border-b border-slate-100 pb-4">
-                                    <h4 className="text-lg uppercase tracking-wider font-bold text-blue-600 flex items-center gap-2">
+                                    <h4 className="text-lg uppercase tracking-wider font-bold text-amber-500 flex items-center gap-2">
                                         <MdOutlineMail />
                                         Email
                                     </h4>
@@ -118,7 +118,7 @@ function Contact() {
                                 </div>
 
                                 <div>
-                                    <h4 className="text-lg uppercase tracking-wider font-bold text-blue-600 flex items-center gap-2">
+                                    <h4 className="text-lg uppercase tracking-wider font-bold text-amber-500 flex items-center gap-2">
                                         <IoLocation />
                                         Address
                                     </h4>
