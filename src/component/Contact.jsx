@@ -7,7 +7,7 @@ function Contact() {
         <section className="bg-slate-50 py-20 px-4 sm:px-6 antialiased font-sans">
             
             {/* Hero Section */}
-            <div className="relative h-[350px] md:h-[450px] lg:h-[500px] w-full bg-blue-950 flex items-center justify-center overflow-hidden rounded-3xl max-w-7xl mx-auto shadow-xl">
+                    <div className="relative h-87.5 md:h-112.5 lg:h-125 w-full bg-blue-950 flex items-center justify-center overflow-hidden rounded-3xl max-w-7xl mx-auto shadow-xl">
                 {/* Blue Tint Overlay over the Background Image */}
                 <div className="absolute inset-0 bg-[url('/contact.png')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-blue-900/5 via-blue-950/5 to-blue-950"></div>

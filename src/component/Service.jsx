@@ -31,7 +31,7 @@ function Service() {
         <div className="py-24 px-6 sm:px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
             
             {/* Storage Card */}
-            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 space-y-4 p-4">
+            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-200 space-y-4 p-4">
                 <img src="/service4.png" alt="Storage services" className="w-full h-64 object-cover rounded-xl" />
                 <div className="px-2 space-y-2">
                     <h1 className="text-xl font-bold text-slate-900">Storage</h1>
@@ -42,7 +42,7 @@ function Service() {
             </div>
 
             {/* Logistic Card */}
-            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 space-y-4 p-4">
+            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-200 space-y-4 p-4">
                 <img src="/service5.png" alt="Logistic services" className="w-full h-64 object-cover rounded-xl" />
                 <div className="px-2 space-y-2">
                     <h1 className="text-xl font-bold text-slate-900">Logistic</h1>
@@ -53,7 +53,7 @@ function Service() {
             </div>
 
             {/* Tow Service Card */}
-            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 space-y-4 p-4">
+            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-200 space-y-4 p-4">
                 <img src="/service6.png" alt="Tow services" className="w-full h-64 object-cover rounded-xl" />
                 <div className="px-2 space-y-2">
                     <h1 className="text-xl font-bold text-slate-900">Tow Service</h1>
@@ -64,7 +64,7 @@ function Service() {
             </div>
 
             {/* Passenger Transport Card */}
-            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 space-y-4 p-4">
+            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-200 space-y-4 p-4">
                 <img src="/service7.png" alt="Passenger Transport services" className="w-full h-64 object-cover rounded-xl" />
                 <div className="px-2 space-y-2">
                     <h1 className="text-xl font-bold text-slate-900">Passenger Transport</h1>
@@ -75,7 +75,7 @@ function Service() {
             </div>
 
             {/* Vehicle Service Card */}
-            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 space-y-4 p-4">
+            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-200 space-y-4 p-4">
                 <img src="/service8.png" alt="Vehicle services" className="w-full h-64 object-cover rounded-xl" />
                 <div className="px-2 space-y-2">
                     <h1 className="text-xl font-bold text-slate-900">Vehicle Service</h1>
@@ -86,7 +86,7 @@ function Service() {
             </div>
 
             {/* Transport Card */}
-            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 space-y-4 p-4">
+            <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-200 space-y-4 p-4">
                 <img src="/service9.png" alt="Transport services" className="w-full h-64 object-cover rounded-xl" />
                 <div className="px-2 space-y-2">
                     <h1 className="text-xl font-bold text-slate-900">Transport</h1>
