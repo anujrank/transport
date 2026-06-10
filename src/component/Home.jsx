@@ -59,14 +59,14 @@ function Home() {
                     <div>
                         <form>
                             <div className="flex lg:flex-row flex-col gap-10">
-                                <input type="text" placeholder='Location' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
-                                <input type="text" placeholder='To Destination' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
-                                <input type="text" placeholder='Cargo/Persons' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="text" placeholder='Location' className='lg:w-40 w-full p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="text" placeholder='To Destination' className='lg:w-40 w-full p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="text" placeholder='Cargo/Persons' className='lg:w-40 w-full p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
                             </div>
-                            <div className="flex lg:flex-row flex-col gap-10 mt-5">
-                                <input type="email" placeholder='email' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
-                                <input type="number" placeholder='Phone Number' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
-                                <input type="submit" value='Get Quote' className='w-40 p-4 border border-slate-950 rounded-xl text-white focus:outline-none bg-slate-950 focus:bg-white transition-colors cursor-pointer' />
+                            <div className="flex lg:flex-row flex-col gap-10 mt-8">
+                                <input type="email" placeholder='email' className='lg:w-40 w-full p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="number" placeholder='Phone Number' className='lg:w-40 w-full p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="submit" value='Get Quote' className='lg:w-40 w-full p-4 border border-slate-950 rounded-xl text-white focus:outline-none bg-slate-950 focus:bg-white transition-colors cursor-pointer' />
                             </div>
                         </form>
                     </div>
