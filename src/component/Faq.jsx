@@ -47,22 +47,22 @@ function Faq() {
         { q: "What about hazmat certifications?", a: "Our team holds all necessary DOT Hazmat certifications and EPA compliance certifications for safe handling of hazardous materials." }
       ]
     },
-    {
-      category: "Pricing & Payment",
-      items: [
-        { q: "How do I get a shipping quote?", a: "You can request a custom quote directly through our website contact form or by calling our sales team." },
-        { q: "Do you offer volume discounts?", a: "Yes, we offer competitive volume discounts and contracted rates for high-frequency shippers." },
-        { q: "What payment methods do you accept?", a: "We accept ACH transfers, all major credit cards, and corporate invoicing for pre-approved accounts." },
-        { q: "Are there any hidden fees?", a: "No, we believe in complete transparency. All potential accessorial charges are clearly outlined in your initial agreement." }
-      ]
-    },
-    {
-      category: "Compliance & Safety",
-      items: [
-        { q: "What certifications do you hold?", a: "We are fully bonded, licensed, and maintain elite safety ratings with national transport regulators." },
-        { q: "Do you handle regulated materials?", a: "Yes, our certified teams and specialized equipment are fully compliant to handle regulated and sensitive materials safely." }
-      ]
-    }
+    // {
+    //   category: "Pricing & Payment",
+    //   items: [
+    //     { q: "How do I get a shipping quote?", a: "You can request a custom quote directly through our website contact form or by calling our sales team." },
+    //     { q: "Do you offer volume discounts?", a: "Yes, we offer competitive volume discounts and contracted rates for high-frequency shippers." },
+    //     { q: "What payment methods do you accept?", a: "We accept ACH transfers, all major credit cards, and corporate invoicing for pre-approved accounts." },
+    //     { q: "Are there any hidden fees?", a: "No, we believe in complete transparency. All potential accessorial charges are clearly outlined in your initial agreement." }
+    //   ]
+    // },
+    // {
+    //   category: "Compliance & Safety",
+    //   items: [
+    //     { q: "What certifications do you hold?", a: "We are fully bonded, licensed, and maintain elite safety ratings with national transport regulators." },
+    //     { q: "Do you handle regulated materials?", a: "Yes, our certified teams and specialized equipment are fully compliant to handle regulated and sensitive materials safely." }
+    //   ]
+    // }
   ];
 
   return (
