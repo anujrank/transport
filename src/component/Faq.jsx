@@ -66,7 +66,7 @@ function Faq() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12 font-sans bg-gray-50/50 min-h-screen">
+    <div className="max-w-7xl mx-auto px-4 py-12 font-sans bg-gray-50/50">
       {faqData.map((section, catIndex) => (
         <div key={catIndex} className="mb-10">
           {/* Section Heading */}
