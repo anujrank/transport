@@ -53,17 +53,17 @@ function Home() {
             <div className="w-full bg-[url('/bg-quote.png')] bg-fixed bg-cover bg-center border-b-2 border-slate-950 py-16">
 
                 {/* 2. Inner container that limits content width and centers it */}
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-center gap-12">
+                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col-reverse lg:flex-row items-center justify-center gap-12">
 
                     {/* Form Container */}
                     <div>
                         <form>
-                            <div className="flex gap-10">
+                            <div className="flex lg:flex-row flex-col gap-10">
                                 <input type="text" placeholder='Location' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
                                 <input type="text" placeholder='To Destination' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
                                 <input type="text" placeholder='Cargo/Persons' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
                             </div>
-                            <div className="flex gap-10 mt-5">
+                            <div className="flex lg:flex-row flex-col gap-10 mt-5">
                                 <input type="email" placeholder='email' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
                                 <input type="number" placeholder='Phone Number' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
                                 <input type="submit" value='Get Quote' className='w-40 p-4 border border-slate-950 rounded-xl text-white focus:outline-none bg-slate-950 focus:bg-white transition-colors cursor-pointer' />
@@ -72,7 +72,7 @@ function Home() {
                     </div>
 
                     {/* Text and Image Container */}
-                    <div className="space-y-4 flex gap-4 max-w-xl">
+                    <div className="space-y-4 flex lg:flex-row flex-col gap-4 max-w-xl">
                         <img src="/quote.png" alt="" className='h-32 mt-3 rounded-sm' />
                         <h3>
                             <span className="text-amber-600 font-bold">Get Your Free Quote Today!</span> <br />
