@@ -8,11 +8,11 @@ function Home() {
     const navigate = useNavigate();
     return (
         <div className="bg-slate-50 min-h-screen text-slate-800 antialiased font-sans">
-            
+
             {/* Hero Section */}
             <div className="relative min-h-[90vh] lg:min-h-screen bg-slate-900 flex items-center overflow-hidden">
                 {/* Background Image Overlay with Gradients */}
-                <div 
+                <div
                     className="absolute inset-0 bg-[url('/hero-img.png')] bg-cover bg-center mix-blend-overlay opacity-40"
                     aria-hidden="true"
                 />
@@ -25,7 +25,7 @@ function Home() {
                             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
                             Premium Logistics Infrastructure
                         </span>
-                        
+
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                             Smart Storage & <br />
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-400 to-amber-500">
@@ -39,16 +39,49 @@ function Home() {
 
                         <div className="pt-4 flex flex-wrap gap-4">
                             <button className="bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-slate-950 font-bold py-4 px-8 rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer flex items-center gap-2" onClick={() => navigate('/contact')}>
-                                Get Started Today<FaRegArrowAltCircleRight className='text-2xl'/>
+                                Get Started Today<FaRegArrowAltCircleRight className='text-2xl' />
                             </button>
                             <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-xl border border-white/10 backdrop-blur-sm transition-all duration-200 cursor-pointer flex items-center gap-2" onClick={() => navigate('/contact')}>
-                                Contact Sales<MdPermPhoneMsg className='text-2xl'/>
+                                Contact Sales<MdPermPhoneMsg className='text-2xl' />
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* get your quote */}
+            {/* 1. Full-width wrapper for the background image and border */}
+            <div className="w-full bg-[url('/bg-quote.png')] bg-fixed bg-cover bg-center border-b-2 border-slate-950 py-16">
 
+                {/* 2. Inner container that limits content width and centers it */}
+                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-center gap-12">
+
+                    {/* Form Container */}
+                    <div>
+                        <form>
+                            <div className="flex gap-10">
+                                <input type="text" placeholder='Location' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="text" placeholder='To Destination' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="text" placeholder='Cargo/Persons' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                            </div>
+                            <div className="flex gap-10 mt-5">
+                                <input type="email" placeholder='email' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="number" placeholder='Phone Number' className='w-40 p-4 border border-slate-950 rounded-xl bg-slate-50/50 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors text-slate-800' />
+                                <input type="submit" value='Get Quote' className='w-40 p-4 border border-slate-950 rounded-xl text-white focus:outline-none bg-slate-950 focus:bg-white transition-colors cursor-pointer' />
+                            </div>
+                        </form>
+                    </div>
+
+                    {/* Text and Image Container */}
+                    <div className="space-y-4 flex gap-4 max-w-xl">
+                        <img src="/quote.png" alt="" className='h-32 mt-3 rounded-sm' />
+                        <h3>
+                            <span className="text-amber-600 font-bold">Get Your Free Quote Today!</span> <br />
+                            Fill out the form to get your quote within the hour. We cover all routes possible. We guaranty safe and timley product delivery either for your personal travel or your products.
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
             {/* About Us Section */}
             <div className="py-24 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -60,24 +93,24 @@ function Home() {
                             </h2>
                         </div>
                         <p className="text-slate-600 text-lg leading-relaxed">
-                            At our company, we specialize in providing reliable storage and transportation services tailored to meet the needs of businesses and individuals. With a commitment to safety, efficiency, and customer satisfaction, we ensure that your goods are handled with the utmost care from pickup to delivery. 
+                            At our company, we specialize in providing reliable storage and transportation services tailored to meet the needs of businesses and individuals. With a commitment to safety, efficiency, and customer satisfaction, we ensure that your goods are handled with the utmost care from pickup to delivery.
                         </p>
                         <p className="text-slate-600 leading-relaxed">
                             Our experienced team, modern fleet, and secure storage facilities enable us to deliver seamless logistics solutions that you can trust. Whether you need short-term storage or long-distance transportation, we are dedicated to providing timely, secure, and cost-effective services every step of the way.
                         </p>
                         <div className="pt-2">
                             <button className="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-200 cursor-pointer shadow-md flex items-center gap-2" onClick={() => navigate('/about')}>
-                                Know More About Us <FaAngleDoubleRight className='text-xl'/>
+                                Know More About Us <FaAngleDoubleRight className='text-xl' />
                             </button>
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2">
                         <div className="relative group">
                             <div className="absolute -inset-2 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl opacity-10 blur-xl group-hover:opacity-20 transition duration-300" />
-                            <img 
-                                src="/aboutus.png" 
-                                alt="Our modern warehouse facility" 
-                                className="relative w-full h-[450px] object-cover rounded-2xl shadow-xl border border-slate-200/60" 
+                            <img
+                                src="/aboutus.png"
+                                alt="Our modern warehouse facility"
+                                className="relative w-full h-[450px] object-cover rounded-2xl shadow-xl border border-slate-200/60"
                             />
                         </div>
                     </div>
@@ -109,7 +142,7 @@ function Home() {
                                     <p className="text-slate-500 leading-relaxed">{item.desc}</p>
                                 </div>
                                 <button className="mt-6 text-sm font-bold text-slate-900 hover:text-amber-600 inline-flex items-center gap-2 group cursor-pointer w-fit" onClick={() => navigate('/service')}>
-                                    Read details 
+                                    Read details
                                     <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                                 </button>
                             </div>
@@ -141,7 +174,7 @@ function Home() {
                             />
                             {/* Static overlay subtle gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
-                            
+
                             {/* Text Content Positioning */}
                             <div className="absolute inset-x-0 bottom-0 p-8 transform transition-transform duration-300">
                                 <h3 className="text-white text-2xl font-bold tracking-tight">
@@ -167,13 +200,13 @@ function Home() {
                 <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                         <div className="w-full lg:w-1/2 order-2 lg:order-1">
-                            <img 
-                                src="/ontime.png" 
-                                alt="On-time secure shipping truck dispatch" 
-                                className="w-full h-[450px] object-cover rounded-2xl shadow-2xl opacity-90 border border-slate-800" 
+                            <img
+                                src="/ontime.png"
+                                alt="On-time secure shipping truck dispatch"
+                                className="w-full h-[450px] object-cover rounded-2xl shadow-2xl opacity-90 border border-slate-800"
                             />
                         </div>
-                        
+
                         <div className="w-full lg:w-1/2 order-1 lg:order-2 space-y-6">
                             <div className="space-y-2">
                                 <span className="text-xs font-bold text-amber-400 tracking-widest uppercase block">Guaranteed Assurance</span>
@@ -181,11 +214,11 @@ function Home() {
                                     Safe and on-time transit execution for your high-value inventory
                                 </h2>
                             </div>
-                            
+
                             <p className="text-slate-400 leading-relaxed">
                                 We are committed to providing reliable, secure, and timely transportation solutions for your valuable goods. Our experienced team ensures every shipment is handled with care, tracked throughout the journey, and delivered safely to its destination.
                             </p>
-                            
+
                             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                                 {[
                                     { title: "On-Time Delivery", desc: "Reliable scheduling matrices." },
@@ -208,7 +241,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Faq/>
+            <Faq />
         </div>
     );
 }
